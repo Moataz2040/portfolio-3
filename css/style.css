@@ -1,0 +1,309 @@
+/* general */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+/* ***************** */
+/* Home */
+.home {
+  min-height: 100vh;
+  background-color: #00000087;
+  background-image: url(./images/intro-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+/* nav */
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #2196f3;
+  font-weight: 600;
+}
+.navbar-light .navbar-brand {
+  color: #2196f3;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus {
+  color: #2196f3;
+}
+/* ******************* */
+
+.name {
+  position: relative;
+  top: 170px;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.warper {
+  list-style-type: none;
+  font-size: 2rem;
+  font-weight: 500;
+  min-height: 70vh;
+}
+
+.warper::after {
+  content: "|";
+  margin-left: 15px;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  0% {
+    content: "|";
+  }
+  5% {
+    content: "D|";
+  }
+  10% {
+    content: "De|";
+  }
+  13% {
+    content: "Dev|";
+  }
+  15% {
+    content: "Deve|";
+  }
+  17% {
+    content: "Devel|";
+  }
+  20% {
+    content: "Develo|";
+  }
+  23% {
+    content: "Develop|";
+  }
+  26% {
+    content: "Develope|";
+  }
+  50% {
+    content: "Developer|";
+  }
+  51% {
+    content: "|";
+  }
+  55% {
+    content: "D|";
+  }
+  57% {
+    content: "De|";
+  }
+  60% {
+    content: "Desi|";
+  }
+  65% {
+    content: "Desig|";
+  }
+  70% {
+    content: "Design|";
+  }
+  80% {
+    content: "Designe|";
+  }
+  100% {
+    content: "Designer|";
+  }
+}
+/* *********************************** */
+/* About */
+.about {
+  padding-top: 8rem;
+}
+.content1 > figure > img {
+ 
+}
+.content1 > .list > ul {
+  list-style-type: none;
+}
+.content1 > .list > ul > li {
+  margin: 0 0 1rem;
+}
+.bar-contain > .bar1 {
+  height: 1rem;
+  background-color: #e9ecef;
+  width: 100%;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  margin: 0 0 1rem;
+}
+.bar-contain > .bar1 > span {
+  display: block;
+  height: 1rem;
+  background-color: #007bff;
+  width: 85%;
+}
+.bar-contain > .bar2 > span {
+  width: 75%;
+}
+.bar-contain > .bar3 > span {
+  width: 50%;
+}
+.bar-contain > .bar4 > span {
+  width: 90%;
+}
+.shape {
+  width: 100px;
+  height: 3px;
+  background-color: #007bff;
+}
+.about-text > p {
+  font-weight: 100;
+  font-size: 21px;
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+}
+/* **************************** */
+/* Services */
+.services {
+  padding-top: 4rem;
+}
+.shape-2 {
+  width: 40px;
+  height: 5px;
+}
+.services-content {
+  margin: 1rem 0 0 0;
+  padding: 1.5rem;
+}
+.icon {
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+  border: 10px solid #007bff;
+}
+.icon:hover {
+  background-color: #0078ff;
+  border-color: #cde1f8;
+  color: white;
+}
+.services-content > h4 {
+  margin: 1rem 0;
+}
+/* ****************************** */
+/* information */
+.information {
+  background-image: url(./images/post-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.information-layer {
+  background-color: rgba(20, 99, 189, 0.8);
+  z-index: 2;
+  padding: 9rem;
+}
+.icon2 {
+  width: 90px;
+  height: 90px;
+  border-color: #cde1f8;
+  color: white;
+}
+.icon2:hover {
+  background-color: transparent;
+}
+/* ******************************** */
+/* portfolio */
+.card > figure {
+  overflow: hidden;
+}
+.card-img-top {
+  cursor: pointer;
+  transition: transform 1s;
+}
+.card-img-top:hover {
+  transform: scale(1.2);
+}
+.portfolio {
+  padding: 4rem 0.75rem;
+}
+.card {
+  width: 22rem;
+  border-radius: 0;
+  border: 0;
+}
+.plus-shape {
+  background-color: #2196f3;
+  width: 32px;
+  height: 32px;
+  color: white;
+}
+/* ******************************** */
+/* work */
+.work {
+  background-color: #4c9ef3;
+}
+.work-content > div {
+  background-color: white;
+  color: #4c9cf2;
+  width: 52px;
+  height: 52px;
+}
+/* ******************************* */
+/* blog */
+.blog{
+  padding: 4rem .75rem;
+}
+.card-btn{
+  margin-top: -50px;
+}
+.footer-image{
+  width: 32px;
+}
+.blog>.row>.col-lg>div{
+  border:1px #dfdfdf solid ;
+}
+/* ******************************** */
+/* contact */
+.contact{
+  background-image: url(./images/overlay-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.contact-layer{
+  background-color:rgba(0, 123, 255,.8);
+  z-index: 2;
+  padding: 3rem;
+}
+.shape-3{
+  height: 4px;
+}
+.inner-p>p{
+  font-size: 21px;
+}
+.contact-information>li>p>svg{
+  /* this is i but in inspect at browser its svg */
+  color: #0078ff;
+}
+.circle3>a{
+  color: black;
+}
+.cont-i{
+  border: 3px solid #0078ff;
+  transition: all .5s;
+}
+.cont-i:hover{
+  background-color: #0078ff;
+  border: 3px solid rgba(0, 120, 255,.2) ;
+}
+.cont-i:hover svg{
+  /* this is i but in inspect at browser its svg */
+  color: white;
+}
+@media(max-width:500px) {
+.information-layer{
+  padding: 2rem;
+}
+}
